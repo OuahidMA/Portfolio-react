@@ -1,4 +1,66 @@
 @import "tailwindcss";
- @plugin "daisyui" {
-   themes: light --default, dark --prefersdark, cupcake;
- }
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f9f6f0;
+  --color-base-300: #ebe6de;
+  --color-base-content: #2b2321;
+  --color-primary: #2b2321;
+  --color-primary-content: #ffffff;
+  --color-secondary: #5c5552;
+  --color-secondary-content: #ffffff;
+  --color-neutral: #ffffff;
+  --color-neutral-content: #2b2321;
+}
+
+@theme {
+  --color-muted: #5c5552;
+  --color-cream: #f9f6f0;
+  --color-espresso: #2b2321;
+}
+
+html,
+body {
+  background-color: #f9f6f0;
+  color: #2b2321;
+  color-scheme: light;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+.cust-icon {
+  width: 2rem;
+  height: 2rem;
+}
