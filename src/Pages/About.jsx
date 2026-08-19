@@ -19,6 +19,7 @@ const skillGroups = [
       { icon: 'devicon-css3-plain colored', label: 'CSS3' },
       { icon: 'devicon-javascript-plain colored', label: 'JavaScript' },
       { icon: 'devicon-react-original colored', label: 'React' },
+      { icon: 'devicon-tailwindcss-plain colored', label: 'Tailwind CSS' },
     ],
   },
   {
