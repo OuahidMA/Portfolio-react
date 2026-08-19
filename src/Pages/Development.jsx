@@ -1,10 +1,3 @@
-const devProjects = [
-  'Full-stack web applications (React, Node.js, Express)',
-  'REST APIs and database design (SQL & NoSQL)',
-  'Automation and scripting with Python',
-  'Low-level systems work in C',
-]
-
 export default function Development() {
   return (
     <div className="min-h-[calc(100vh-4rem)]">
@@ -19,33 +12,40 @@ export default function Development() {
       </section>
 
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="card bg-base-100 border border-base-300">
-            <div className="card-body items-center text-center py-14">
-              <div className="p-4 rounded-box bg-primary/10 text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                  />
-                </svg>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid gap-8 md:grid-cols-2">
+            {/* CARD 1 */}
+            <div className="card bg-base-100 border border-base-300 shadow-sm">
+              {/* Place the project image here, e.g. <figure><img src="..." alt="Project 1" /></figure> */}
+              <div className="card-body">
+                <h2 className="card-title">
+                  Chapter Bookstore
+                  <div className="badge badge-primary badge-outline">React</div>
+                </h2>
+                {/* Place the description of the card here */}
+                <p>An online bookstore that displays books according to their language</p>
+                <div className="justify-end card-actions">
+                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                </div>
               </div>
-              <h2 className="card-title text-xl mt-4">Projects coming soon</h2>
-              <p className="text-sm text-muted max-w-md">
-                This section is being populated. While it is, here is what you will find here:
-              </p>
-              <ul className="menu bg-base-100 border border-base-300 rounded-box w-full max-w-md text-left mt-4">
-                {devProjects.map((item) => (
-                  <li key={item}>
-                    <a className="text-sm">
-                      <span className="text-primary">▸</span>
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            </div>
+
+            {/* CARD 2 */}
+            <div className="card bg-base-100 border border-base-300 shadow-sm">
+              {/* Place the project image here, e.g. <figure><img src="..." alt="Project 2" /></figure> */}
+              <div className="card-body">
+                <h2 className="card-title">
+                  Project Two
+                  <div className="badge badge-primary badge-outline">Node.js</div>
+                </h2>
+                {/* Place the description of the card here */}
+                <p>Add a short description of what this project does and what it was built with.</p>
+                <div className="justify-end card-actions">
+                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

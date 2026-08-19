@@ -1,10 +1,3 @@
-const cyberProjects = [
-  'Full-scope penetration tests of web applications',
-  'Internal network enumeration across Windows & Linux',
-  'Custom tooling built with Python and C',
-  'Vulnerability assessment & remediation guidance',
-]
-
 export default function Cybersecurity() {
   return (
     <div className="min-h-[calc(100vh-4rem)]">
@@ -20,8 +13,12 @@ export default function Cybersecurity() {
 
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="card bg-base-100 border border-base-300">
+          <div className="card bg-base-100 border border-base-300 shadow-sm">
             <div className="card-body items-center text-center py-14">
+              <h2 className="card-title text-xl">
+                Projects coming soon
+                <div className="badge badge-primary badge-outline">In progress</div>
+              </h2>
               <div className="p-4 rounded-box bg-primary/10 text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
@@ -32,20 +29,9 @@ export default function Cybersecurity() {
                   />
                 </svg>
               </div>
-              <h2 className="card-title text-xl mt-4">Projects coming soon</h2>
               <p className="text-sm text-muted max-w-md">
-                This section is being populated. While it is, here is what you will find here:
+                This section is being populated. Check back soon for new projects.
               </p>
-              <ul className="menu bg-base-100 border border-base-300 rounded-box w-full max-w-md text-left mt-4">
-                {cyberProjects.map((item) => (
-                  <li key={item}>
-                    <a className="text-sm">
-                      <span className="text-primary">▸</span>
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

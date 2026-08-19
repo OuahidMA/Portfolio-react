@@ -44,7 +44,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold">Two disciplines, one approach</h2>
           <p className="mt-3 text-muted max-w-2xl mx-auto">
-            I build things that work, then break them to make sure they keep working.
+            I build things that work, then audit them to make sure they keep working.
           </p>
           <div className="grid sm:grid-cols-2 gap-6 mt-10 max-w-4xl mx-auto">
             {disciplines.map((d) => (
