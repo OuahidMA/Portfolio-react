@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 const socialLinks = [
   {
@@ -29,8 +30,8 @@ export default function Footer() {
   return (
     <footer className="footer sm:footer-horizontal bg-base-100 border-t border-base-300 text-base-content px-6 sm:px-10 py-10">
       <aside>
-        <Link to="/" className="font-sans text-2xl font-bold tracking-tight">
-          OHD
+        <Link to="/" className="inline-block">
+          <img src={logo} alt="OHD logo" className="h-16 w-auto object-contain [image-rendering:-webkit-optimize-contrast] [shape-rendering:geometricPrecision]" />
         </Link>
         <p className="text-sm text-muted">
           Builder &amp; Auditor.

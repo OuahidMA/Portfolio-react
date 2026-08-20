@@ -23,7 +23,7 @@ export default function Development() {
                   <div className="badge badge-primary badge-outline">React</div>
                 </h2>
                 {/* Place the description of the card here */}
-                <p>An online bookstore that displays books according to their language</p>
+                <p>An online bookstore developed using HTML and JavaScript and a mixture of Tailwind and Native CSS</p>
                 <div className="justify-end card-actions">
                   <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
                   <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
@@ -32,14 +32,13 @@ export default function Development() {
             </div>
 
             {/* CARD 2 */}
+            {/*
             <div className="card bg-base-100 border border-base-300 shadow-sm">
-              {/* Place the project image here, e.g. <figure><img src="..." alt="Project 2" /></figure> */}
               <div className="card-body">
                 <h2 className="card-title">
                   Project Two
                   <div className="badge badge-primary badge-outline">Node.js</div>
                 </h2>
-                {/* Place the description of the card here */}
                 <p>Add a short description of what this project does and what it was built with.</p>
                 <div className="justify-end card-actions">
                   <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
@@ -47,6 +46,24 @@ export default function Development() {
                 </div>
               </div>
             </div>
+            */}
+
+            {/* CARD 3 */}
+            {/*
+            <div className="card bg-base-100 border border-base-300 shadow-sm">
+              <div className="card-body">
+                <h2 className="card-title">
+                  Project Three
+                  <div className="badge badge-primary badge-outline">JavaScript</div>
+                </h2>
+                <p>Add a short description of what this project does and what it was built with.</p>
+                <div className="justify-end card-actions">
+                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                </div>
+              </div>
+            </div>
+            */}
           </div>
         </div>
       </section>

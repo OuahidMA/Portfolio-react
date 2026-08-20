@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 function useClickOutside(ref, handler) {
   useEffect(() => {
@@ -139,8 +140,8 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl font-sans tracking-tight">
-          OHD
+        <Link to="/" className="btn btn-ghost">
+          <img src={logo} alt="OHD logo" className="h-8 w-auto object-contain [image-rendering:-webkit-optimize-contrast] [shape-rendering:geometricPrecision]" />
         </Link>
       </div>
 
