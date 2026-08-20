@@ -140,7 +140,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <Link to="/" className="btn btn-ghost">
+        <Link to="/" className="inline-block leading-none">
           <img src={logo} alt="OHD logo" className="h-8 w-auto object-contain [image-rendering:-webkit-optimize-contrast] [shape-rendering:geometricPrecision]" />
         </Link>
       </div>

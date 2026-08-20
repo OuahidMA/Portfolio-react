@@ -1,4 +1,5 @@
-import { Routes, Route, Outlet } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Routes, Route, Outlet, useLocation } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Home from './Pages/Home'
@@ -8,7 +9,20 @@ import Cybersecurity from './Pages/Cybersecurity'
 import Contact from './Pages/Contact'
 import NotFound from './Pages/NotFound'
 
+const pageTitles = {
+  '/': 'Home',
+  '/about': 'About',
+  '/projects/development': 'Projects',
+  '/projects/cybersecurity': 'Projects',
+  '/contact': 'Get in Touch',
+}
+
 function Layout() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    document.title = `OMA — ${pageTitles[pathname] ?? 'Page Not Found'}`
+  }, [pathname])
   return (
     <div className="min-h-screen flex flex-col bg-base-200 text-base-content">
       <Navbar />

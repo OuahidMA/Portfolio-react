@@ -31,7 +31,7 @@ export default function Development() {
                     <i className="devicon-css3-plain text-xl" title="CSS"></i>
                   </div>
                 </h2>
-                {/* Place the description of the card here */}
+                {/* Description */}
                 <p>An online bookstore developed using HTML and JavaScript and a mixture of Tailwind and Native CSS</p>
                 <div className="justify-end card-actions">
                   <a href="https://github.com/OuahidMA/chapter-e-com" target="_blank" className="btn btn-outline btn-sm">View Source Code</a>
