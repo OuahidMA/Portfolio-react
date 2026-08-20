@@ -1,3 +1,5 @@
+import chapterBookstore from '../assets/proj-imgs/CHAPTER-Bookstore.png'
+
 export default function Development() {
   return (
     <div className="min-h-[calc(100vh-4rem)]">
@@ -16,17 +18,24 @@ export default function Development() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* CARD 1 */}
             <div className="card bg-base-100 border border-base-300 shadow-sm">
-              {/* Place the project image here, e.g. <figure><img src="..." alt="Project 1" /></figure> */}
+              <figure>
+                <img src={chapterBookstore} alt="Chapter Bookstore" className="w-full object-cover" />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">
                   Chapter Bookstore
-                  <div className="badge badge-primary badge-outline">React</div>
+                  <div className="flex items-center gap-2 text-espresso">
+                    <i className="devicon-html5-plain text-xl" title="HTML"></i>
+                    <i className="devicon-javascript-plain text-xl" title="JavaScript"></i>
+                    <i className="devicon-tailwindcss-plain text-xl" title="Tailwind CSS"></i>
+                    <i className="devicon-css3-plain text-xl" title="CSS"></i>
+                  </div>
                 </h2>
                 {/* Place the description of the card here */}
                 <p>An online bookstore developed using HTML and JavaScript and a mixture of Tailwind and Native CSS</p>
                 <div className="justify-end card-actions">
-                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
-                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="https://github.com/OuahidMA/chapter-e-com" target="_blank" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="https://chapter-pi.vercel.app/" target="_blank" className="btn btn-primary btn-sm">Live Demo</a>
                 </div>
               </div>
             </div>
