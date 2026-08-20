@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
+  const [form, setForm] = useState({ name: '', email: '', type: 'Inquiry', message: '' })
 
   const handleChange = (e) => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
@@ -10,7 +10,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const subject = encodeURIComponent(`Portfolio contact from ${form.name}`)
-    const body = encodeURIComponent(form.message)
+    const body = encodeURIComponent(`Type: ${form.type}\n\n${form.message}`)
     window.location.href = `mailto:you@example.com?subject=${subject}&body=${body}`
   }
 
@@ -68,6 +68,16 @@ export default function Contact() {
                 </div>
 
                 <div>
+                  <label className="select select-lg w-full">
+                    <span className="label">Type</span>
+                    <select name="type" value={form.type} onChange={handleChange}>
+                      <option>Inquiry</option>
+                      <option>General</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div>
                   <label className="floating-label w-full">
                     <textarea
                       name="message"
@@ -86,13 +96,6 @@ export default function Contact() {
                   Send Message
                 </button>
               </form>
-              <p className="text-xs text-muted mt-4">
-                The form opens your mail client. For a direct email, use{' '}
-                <a href="mailto:you@example.com" className="link link-primary">
-                  you@example.com
-                </a>
-                .
-              </p>
             </div>
           </div>
         </div>
