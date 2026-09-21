@@ -48,17 +48,18 @@ export default function Development() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Project Two
+                  Lincord
                   <div className="flex items-center gap-2 text-espresso">
                     <i className="devicon-react-original text-xl" title="React"></i>
+                    <i className="devicon-javascript-plain text-xl" title="JavaScript"></i>
                     <i className="devicon-tailwindcss-plain text-xl" title="Tailwind CSS"></i>
                     <i className="devicon-css3-plain text-xl" title="CSS"></i>
                   </div>
                 </h2>
-                <p>Add a short description of what this project does and what it was built with.</p>
+                <p>A responsive Front-End application developed to market and streamline complex cyber security engagements for B2B clients.</p>
                 <div className="justify-end card-actions">
-                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
-                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="https://github.com/OuahidMA/lincord" target="_blank" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="https://lincord.vercel.app/" target="_blank" className="btn btn-primary btn-sm">Live Demo</a>
                 </div>
               </div>
             </div>
