@@ -1,4 +1,5 @@
 import chapterBookstore from '../assets/proj-imgs/CHAPTER-Bookstore.png'
+import lincord from '../assets/proj-imgs/Lincord—Offensive-Security.png'
 
 export default function Development() {
   return (
@@ -41,12 +42,18 @@ export default function Development() {
             </div>
 
             {/* CARD 2 */}
-            {/*
             <div className="card bg-base-100 border border-base-300 shadow-sm">
+              <figure>
+                <img src={lincord} alt="Lincord Offensive Security" className="w-full object-cover" />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">
                   Project Two
-                  <div className="badge badge-primary badge-outline">Node.js</div>
+                  <div className="flex items-center gap-2 text-espresso">
+                    <i className="devicon-react-original text-xl" title="React"></i>
+                    <i className="devicon-tailwindcss-plain text-xl" title="Tailwind CSS"></i>
+                    <i className="devicon-css3-plain text-xl" title="CSS"></i>
+                  </div>
                 </h2>
                 <p>Add a short description of what this project does and what it was built with.</p>
                 <div className="justify-end card-actions">
@@ -55,7 +62,6 @@ export default function Development() {
                 </div>
               </div>
             </div>
-            */}
 
             {/* CARD 3 */}
             {/*
