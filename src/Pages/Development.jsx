@@ -80,7 +80,7 @@ export default function Development() {
                     <i className="devicon-express-original text-xl" title="Express.js"></i>
                   </div>
                 </h2>
-                <p>Add a short description of what this project does and what it was built with.</p>
+                <p>Full-Stack web application that uses an AI API to provide an in-depth analysis for resumes and job description matchability.</p>
                 <div className="justify-end card-actions">
                   <a href="https://github.com/OuahidMA/IntelME" target="_blank" className="btn btn-outline btn-sm">View Source Code</a>
                   <a href="https://intelme.vercel.app/" target="_blank" className="btn btn-primary btn-sm">Live Demo</a>
