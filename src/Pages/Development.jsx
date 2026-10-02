@@ -82,8 +82,8 @@ export default function Development() {
                 </h2>
                 <p>Add a short description of what this project does and what it was built with.</p>
                 <div className="justify-end card-actions">
-                  <a href="https://github.com/OuahidMA/IntelME" className="btn btn-outline btn-sm">View Source Code</a>
-                  <a href="https://intelme.vercel.app" className="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="https://github.com/OuahidMA/IntelME" target="_blank" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="https://intelme.vercel.app/" target="_blank" className="btn btn-primary btn-sm">Live Demo</a>
                 </div>
               </div>
             </div>
