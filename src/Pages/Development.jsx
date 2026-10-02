@@ -1,5 +1,6 @@
 import chapterBookstore from '../assets/proj-imgs/CHAPTER-Bookstore.png'
 import lincord from '../assets/proj-imgs/Lincord—Offensive-Security.png'
+import intelme from '../assets/proj-imgs/intelme.png'
 
 export default function Development() {
   return (
@@ -65,21 +66,27 @@ export default function Development() {
             </div>
 
             {/* CARD 3 */}
-            {/*
             <div className="card bg-base-100 border border-base-300 shadow-sm">
+              <figure>
+                <img src={intelme} alt="IntelME" className="w-full object-cover" />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">
-                  Project Three
-                  <div className="badge badge-primary badge-outline">JavaScript</div>
+                  IntelME
+                  <div className="flex items-center gap-2 text-espresso">
+                    <i className="devicon-react-original text-xl" title="React"></i>
+                    <i className="devicon-mongodb-plain text-xl" title="MongoDB"></i>
+                    <i className="devicon-nodejs-plain text-xl" title="Node.js"></i>
+                    <i className="devicon-express-original text-xl" title="Express.js"></i>
+                  </div>
                 </h2>
                 <p>Add a short description of what this project does and what it was built with.</p>
                 <div className="justify-end card-actions">
-                  <a href="#" className="btn btn-outline btn-sm">View Source Code</a>
-                  <a href="#" className="btn btn-primary btn-sm">Live Demo</a>
+                  <a href="https://github.com/OuahidMA/IntelME" className="btn btn-outline btn-sm">View Source Code</a>
+                  <a href="https://intelme.vercel.app" className="btn btn-primary btn-sm">Live Demo</a>
                 </div>
               </div>
             </div>
-            */}
           </div>
         </div>
       </section>
